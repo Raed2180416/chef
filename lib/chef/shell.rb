@@ -372,7 +372,7 @@ module Shell
       puts footer
       puts Chef::Licensing.licensing_help if ChefUtils::Dist::Infra::SHELL == "chef-shell"
       puts
-      exit 1
+      exit 0
     end
 
     def self.setup!
